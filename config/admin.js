@@ -1,14 +1,14 @@
 module.exports = ({ env }) => ({
   apiToken: {
-    salt: env('API_TOKEN_SALT', 'c9TWIE70kKs1ALYTx4tOKg=='),
+    salt: env('API_TOKEN_SALT'),
   },
   transfer: {
     token: {
-      salt: env('TRANSFER_TOKEN_SALT', 'YiWyyIPUPINSpMeZtmfqlA=='),
+      salt: env('TRANSFER_TOKEN_SALT'),
     },
   },
   auth: {
-    secret: env('ADMIN_JWT_SECRET', 'kNuqC0ZtVBgE8WJqngcRQQ=='),
+    secret: env('ADMIN_JWT_SECRET'),
   },
   url: env('STRAPI_ADMIN_BACKEND_URL', 'https://eddie-varela-cms.onrender.com'),
 });
