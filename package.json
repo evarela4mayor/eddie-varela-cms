@@ -1,0 +1,12 @@
+{
+  "name": "eddie-varela-cms",
+  "version": "1.0.0",
+  "scripts": {
+    "develop": "strapi develop"
+  },
+  "dependencies": {
+    "@strapi/strapi": "latest",
+    "@strapi/provider-upload-cloudinary": "latest",
+    "sqlite3": "latest"
+  }
+}
