@@ -6,6 +6,7 @@
   },
   "dependencies": {
     "@strapi/strapi": "latest",
-    "@strapi/provider-upload-cloudinary": "latest"
+    "@strapi/provider-upload-cloudinary": "latest",
+    "better-sqlite3": "latest"
   }
 }
