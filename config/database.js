@@ -1,4 +1,3 @@
-```javascript
 module.exports = ({ env }) => ({
   connection: {
     client: 'sqlite',
@@ -9,4 +8,3 @@ module.exports = ({ env }) => ({
     debug: false,
   },
 });
-```
