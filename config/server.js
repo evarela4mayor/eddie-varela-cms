@@ -5,4 +5,7 @@ module.exports = ({ env }) => ({
   app: {
     keys: env.array('APP_KEYS'),
   },
+  admin: {
+    autoOpen: false, // Prevent auto-opening browser in production
+  },
 });
