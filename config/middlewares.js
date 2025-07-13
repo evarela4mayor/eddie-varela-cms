@@ -22,14 +22,17 @@ module.exports = [
   },
   {
     name: 'custom-redirect',
-    config: () => {
-      return async (ctx, next) => {
-        if (ctx.request.path === '/' || ctx.request.path === '') {
-          ctx.redirect('/admin');
-          return;
-        }
-        await next();
-      };
-    },
+    resolve: './src/middlewares/custom-redirect',
   },
 ];
+
+// Create a new file: src/middlewares/custom-redirect.js
+module.exports = () => {
+  return async (ctx, next) => {
+    if (ctx.request.path === '/' || ctx.request.path === '') {
+      ctx.redirect('/admin');
+      return;
+    }
+    await next();
+  };
+};
