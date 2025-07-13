@@ -22,15 +22,14 @@ module.exports = [
   },
   {
     name: 'custom-redirect',
-    config: {
-      resolve: async (ctx, next) => {
+    config: () => {
+      return async (ctx, next) => {
         if (ctx.request.path === '/' || ctx.request.path === '') {
-          // Redirect root to admin panel
           ctx.redirect('/admin');
           return;
         }
         await next();
-      },
+      };
     },
   },
 ];
