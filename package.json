@@ -2,11 +2,16 @@
   "name": "eddie-varela-cms",
   "version": "1.0.0",
   "scripts": {
-    "develop": "strapi develop"
+    "develop": "strapi develop",
+    "start": "strapi start"
   },
   "dependencies": {
     "@strapi/strapi": "latest",
     "@strapi/provider-upload-cloudinary": "latest",
-    "better-sqlite3": "latest"
+    "better-sqlite3": "latest",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "react-router-dom": "^6.0.0",
+    "styled-components": "^6.0.0"
   }
 }
