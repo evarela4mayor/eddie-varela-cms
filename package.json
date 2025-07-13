@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "scripts": {
     "develop": "strapi develop",
-    "start": "strapi start"
+    "start": "strapi start",
+    "build": "strapi build"
   },
   "dependencies": {
     "@strapi/strapi": "latest",
