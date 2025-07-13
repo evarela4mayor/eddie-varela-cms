@@ -9,7 +9,7 @@ module.exports = [
   'strapi::session',
   'strapi::favicon',
   {
-    name: 'custom-redirect',
+    name: 'global::custom-redirect',
     resolve: () => {
       return async (ctx, next) => {
         if (ctx.request.path === '/' || ctx.request.path === '') {
