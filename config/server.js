@@ -7,6 +7,7 @@ module.exports = ({ env }) => ({
     keys: env.array('APP_KEYS'),
   },
   admin: {
-    autoOpen: false, // Prevent auto-opening browser in production
+    autoOpen: false,
+    url: env('STRAPI_ADMIN_URL', '/admin'),
   },
 });
