@@ -1,5 +1,5 @@
 module.exports = {
-  async bootstrap({ strapi }) {
+  register({ strapi }) {
     strapi.server.routes([
       {
         method: 'GET',
