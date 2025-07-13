@@ -8,6 +8,12 @@ module.exports = [
   'strapi::body',
   'strapi::session',
   {
+    name: 'strapi::favicon',
+    config: {
+      path: 'favicon.ico',
+    },
+  },
+  {
     resolve: './src/middlewares/custom-redirect.js',
   },
   {
