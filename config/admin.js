@@ -12,4 +12,6 @@ module.exports = ({ env }) => ({
   },
   url: env('STRAPI_ADMIN_BACKEND_URL', 'https://eddie-varela-cms.onrender.com'),
   serveAdminPanel: true,
+  path: '/admin',
+  autoOpen: false, // Disable auto-opening browser in production
 });
