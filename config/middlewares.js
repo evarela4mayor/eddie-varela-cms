@@ -9,6 +9,20 @@ module.exports = [
   'strapi::session',
   'strapi::favicon',
   {
+    name: 'custom-redirect',
+    config: {
+      handler: () => {
+        return async (ctx, next) => {
+          if (ctx.request.path === '/' || ctx.request.path === '') {
+            ctx.redirect('/admin');
+            return;
+          }
+          await next();
+        };
+      },
+    },
+  },
+  {
     name: 'strapi::public',
     config: {
       contentType: true,
