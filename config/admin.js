@@ -11,4 +11,5 @@ module.exports = ({ env }) => ({
     secret: env('ADMIN_JWT_SECRET'),
   },
   url: env('STRAPI_ADMIN_BACKEND_URL', 'https://eddie-varela-cms.onrender.com'),
+  serveAdminPanel: true,
 });
