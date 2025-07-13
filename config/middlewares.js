@@ -7,6 +7,7 @@ module.exports = [
   'strapi::query',
   'strapi::body',
   'strapi::session',
+  'strapi::favicon',
   {
     name: 'strapi::public',
     config: {
