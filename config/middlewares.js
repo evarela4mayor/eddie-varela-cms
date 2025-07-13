@@ -22,17 +22,6 @@ module.exports = [
   },
   {
     name: 'custom-redirect',
-    resolve: './src/middlewares/custom-redirect',
+    resolve: './src/middlewares/custom-redirect.js', // Ensure .js extension
   },
 ];
-
-// Create a new file: src/middlewares/custom-redirect.js
-module.exports = () => {
-  return async (ctx, next) => {
-    if (ctx.request.path === '/' || ctx.request.path === '') {
-      ctx.redirect('/admin');
-      return;
-    }
-    await next();
-  };
-};
