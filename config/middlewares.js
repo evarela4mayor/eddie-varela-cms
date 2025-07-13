@@ -12,16 +12,11 @@ module.exports = [
     config: {
       contentType: true,
       defaultIndex: 'index.html',
-      paths: [
-        {
-          path: '/admin',
-          folder: 'build', // Serve admin panel from build/ folder
-        },
-      ],
+      paths: [{ path: '/admin', folder: 'build' }],
     },
   },
   {
     name: 'custom-redirect',
-    resolve: './src/middlewares/custom-redirect.js', // Ensure .js extension
+    resolve: './src/middlewares/custom-redirect.js',
   },
 ];
