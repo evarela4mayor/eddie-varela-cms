@@ -2,10 +2,6 @@ import { defineConfig } from 'vite'
 
 export default defineConfig({
   server: {
-    allowedHosts: [
-      'eddie-varela-cms.onrender.com',
-      'localhost',
-      '.onrender.com' // This allows any subdomain of onrender.com
-    ]
+    allowedHosts: process.env.VITE_ALLOWED_HOSTS?.split(',') || ['localhost']
   }
 })
