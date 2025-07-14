@@ -1,7 +1,11 @@
-import { defineConfig } from 'vite'
+const { defineConfig } = require('vite')
 
-export default defineConfig({
+module.exports = defineConfig({
   server: {
-    allowedHosts: 'all'
+    allowedHosts: [
+      'eddie-varela-cms.onrender.com',
+      'localhost',
+      '.onrender.com'
+    ]
   }
 })
